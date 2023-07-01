@@ -1,11 +1,11 @@
 import os
 import tkinter as tk
+import tkinter.messagebox
 
 def load_word_list(file_path):
     with open(file_path, 'r') as file:
         words = file.read().splitlines()
     return words
-
 
 def is_valid_word(word, known_letters, confirmed_letters, excluded_letters):
     for letter in known_letters:
@@ -19,7 +19,6 @@ def is_valid_word(word, known_letters, confirmed_letters, excluded_letters):
             return False
     return True
 
-
 def solve_wordle(word_list_file, known_letters, confirmed_letters, excluded_letters):
     solutions = []
     with open(word_list_file, 'r') as file:
@@ -28,7 +27,6 @@ def solve_wordle(word_list_file, known_letters, confirmed_letters, excluded_lett
             if is_valid_word(word, known_letters, confirmed_letters, excluded_letters):
                 solutions.append(word)
     return solutions
-
 
 def solve_button_click():
     known_letters = known_entry.get().upper()
@@ -65,7 +63,6 @@ def solve_button_click():
         results_text.insert(tk.END, "No solutions found.")
         results_text.config(state='disabled')
 
-
 def reset_button_click():
     known_entry.delete(0, tk.END)
     confirmed_entry_1.delete(0, tk.END)
@@ -87,8 +84,6 @@ def reset_button_click():
     results_text.config(state='normal')
     results_text.delete(1.0, tk.END)
     results_text.config(state='disabled')
-
-import tkinter.messagebox
 
 def add_word_button_click():
     new_word = new_word_entry.get().upper()
@@ -139,13 +134,10 @@ def load_button_click():
         tkinter.messagebox.showerror(title="Error", message=f"File '{new_word_list_file}' not found")
     word_list_entry.delete(0, tk.END)
 
-
 def validate_entry(text):
     if len(text) > 1:
         return False
     return True
-
-
 
 # Get the directory path of the script
 script_directory = os.path.dirname(os.path.abspath(__file__))
