@@ -15,6 +15,11 @@ Python-based Wordle-style solver for use during **Aesthene's Close**.
 # Install python
 https://www.python.org/downloads/
 
+# Download the files
+https://github.com/Thires/AestheneSolver/archive/refs/heads/main.zip
+
+OR
+
 ### Clone the repository:
 ```bash
 git clone https://github.com/Thires/AestheneSolver.git
