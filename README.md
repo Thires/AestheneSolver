@@ -4,5 +4,4 @@ python  to solve wordle during Aesthene's Close
 Install this if it is not installed
 pip install tk
 
-![image](https://github.com/Thires/AestheneSolver/assets/28072996/9b239626-f69c-4563-ab84-d4da925cc65b)
-![image](https://github.com/Thires/AestheneSolver/assets/28072996/8aa76132-9a5c-474b-a0f1-dd31e1240a27)
+![image](https://github.com/user-attachments/assets/deb42f3c-707e-4e35-a3b5-39693db98a74)
