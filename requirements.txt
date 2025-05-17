@@ -1,2 +1,0 @@
-# GUI requirement — typically preinstalled
-tkinter ; sys_platform != "win32"
