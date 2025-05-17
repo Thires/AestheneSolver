@@ -1,3 +1,2 @@
-# Tkinter is required for GUI — often preinstalled
-# On Linux, install with: sudo apt install python3-tk
+# GUI requirement — typically preinstalled
 tkinter ; sys_platform != "win32"
