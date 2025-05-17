@@ -8,6 +8,9 @@ cd AestheneSolver
 # Install dependencies
 pip install -r requirements.txt
 
+# On Linux, if you see errors about tkinter missing:
+sudo apt install python3-tk
+
 # Run it
 python AestheneSolver.py
 
