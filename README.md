@@ -36,7 +36,7 @@ brew install python-tk
 # Run it
 python AestheneSolver.py
 
-or use and double click AestheneSolver.pyw to open run with no console
+Can also use AestheneSolver.pyw to run with no console by clicking it
 
 
 ![image](https://github.com/user-attachments/assets/deb42f3c-707e-4e35-a3b5-39693db98a74)
