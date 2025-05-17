@@ -5,7 +5,7 @@ python  to solve wordle during Aesthene's Close
 git clone https://github.com/Thires/AestheneSolver.git
 cd AestheneSolver
 
-# Optional: install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
 # Run it
