@@ -18,11 +18,6 @@ git clone https://github.com/Thires/AestheneSolver.git
 cd AestheneSolver
 ```
 
-# On Windows:
-```bash
-pip install tk
-```
-
 # On Linux:
 ```bash
 sudo apt install python3-tk
