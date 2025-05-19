@@ -71,6 +71,17 @@ def solve_button_click():
     results_text.insert(tk.END, '\n'.join(solutions) if solutions else "No solutions found.")
     results_text.config(state='disabled')
 
+def copy_selected_word(event):
+    try:
+        selected = results_text.get(tk.SEL_FIRST, tk.SEL_LAST).strip()
+        if selected:
+            full_command = f"whisper lock {selected}"
+            window.clipboard_clear()
+            window.clipboard_append(full_command)
+            window.update()
+            tk.messagebox.showinfo("Copied", f"Copied to clipboard:\n{full_command}")
+    except tk.TclError:
+        pass
 
 def reset_button_click():
     grid_text_box.delete("1.0", tk.END)
@@ -160,6 +171,7 @@ scroll = tk.Scrollbar(results_frame)
 scroll.pack(side=tk.RIGHT, fill=tk.Y)
 results_text = tk.Text(results_frame, height=10, width=35, yscrollcommand=scroll.set)
 results_text.pack(side=tk.LEFT)
+results_text.bind("<ButtonRelease-1>", copy_selected_word)
 scroll.config(command=results_text.yview)
 
 add_frame = tk.Frame(window)
