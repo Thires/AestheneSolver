@@ -157,7 +157,7 @@ available_letters_label = tk.Label(window, text=' '.join('ABCDEFGHIJKLMNOPQRSTUV
 available_letters_label.pack()
 
 tk.Label(window, text="Paste Wordle Grid:").pack()
-grid_text_box = tk.Text(window, height=6, width=50)
+grid_text_box = tk.Text(window, height=6, width=33)
 grid_text_box.pack()
 
 btn_frame = tk.Frame(window)
