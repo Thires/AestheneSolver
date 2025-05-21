@@ -137,7 +137,7 @@ word_list_file = os.path.join(script_directory, 'Aesthene-words.txt')
 window = tk.Tk()
 window.title("Aesthene's Close Wordle")
 # Define size
-win_w = 280
+win_w = 320
 win_h = 440
 
 # Center position
@@ -189,9 +189,9 @@ remove_word_entry.pack()
 tk.Button(remove_frame, text="Remove", command=remove_word_button_click).pack()
 
 load_frame = tk.Frame(window)
-load_frame.pack(side=tk.RIGHT, padx=10)
+load_frame.pack(side=tk.LEFT, padx=10)
 tk.Label(load_frame, text="Word List File:").pack()
-word_list_entry = tk.Entry(load_frame, width=15)
+word_list_entry = tk.Entry(load_frame, width=30)
 word_list_entry.insert(0, "Aesthene-words.txt")
 word_list_entry.pack()
 tk.Button(load_frame, text="Load", command=load_button_click).pack()
