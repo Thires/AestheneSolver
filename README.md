@@ -49,3 +49,9 @@ Can also use AestheneSolver.pyw to run with no console by clicking it
 ![image](https://github.com/user-attachments/assets/95dd220c-82d4-4935-951b-bdeb6f961aa3)
 
 
+https://github.com/user-attachments/assets/05432898-3839-4065-953b-e37129340a91
+
+
+
+
+
